@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>freeCodeCamp Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="title">
+      <h1 id="title">freeCodeCamp Survey Form</h1>
+      <p id="description">
+        Thank you for taking the time to help us improve the platform
+      </p>
+    </div>
+    <form id="survey-form">
+      <div class="input-form">
+        <label for="name" id="name-label">Name </label>
+        <input
+          id="name"
+          name="name"
+          type="text"
+          required
+          placeholder="Enter Your Name" />
+      </div>
+      <div class="input-form">
+        <label for="email" id="email-label">Email </label>
+        <input
+          id="email"
+          name="email"
+          type="email"
+          required
+          placeholder="Enter Your Email" />
+      </div>
+      <div class="input-form">
+        <label for="number" id="number-label"
+          >Age <span>(optional)</span>
+        </label>
+        <input
+          id="number"
+          name="number"
+          type="number"
+          min="1"
+          max="100"
+          required
+          placeholder="Age" />
+      </div>
+      <div class="input-form">
+        <label for="dropdown ">How did you hear about us? </label>
+        <select id="dropdown" name="dropdown" required>
+          <option value="">Select Current Role</option>
+          <option value="Student">Student</option>
+          <option value="Full Time Job">Full Time Job</option>
+          <option value="Full Time Learner">Full Time Learner</option>
+          <option value="Prefer Not To Say">Prefer Not To Say</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+      <div class="input-form">
+        <legend>Select a maintenance drone:</legend>
+        <div>
+          <input
+            type="radio"
+            id="definitely"
+            name="maintenance-drone"
+            value="definitely"
+            checked />
+          <label for="definitely">definitely</label>
+        </div>
+        <div>
+          <input
+            type="radio"
+            id="maybe"
+            name="maintenance-drone"
+            value="maybe" />
+          <label for="maybe">maybe</label>
+        </div>
+        <div>
+          <input
+            type="radio"
+            id="not-sure"
+            name="maintenance-drone"
+            value="not-sure" />
+          <label for="not-sure">Not Sure</label>
+        </div>
+      </div>
+
+      <div class="input-form">
+        <label for="feature"
+          >What is your favorite feature of freeCodeCamp?</label
+        >
+        <select id="feature" name="feature">
+          <option value="">Select an option</option>
+          <option value="Challenges">Challenges</option>
+          <option value="Projects">Projects</option>
+          <option value="Community">Community</option>
+          <option value="Open Source">Open Source</option>
+        </select>
+      </div>
+      <div class="input-form">
+        <label for=""
+          >What would you like to see improved?
+          <span>(Check all that apply)</span>
+        </label>
+        <label for="front-end-projects">
+          <input
+            class="inline"
+            id="front-end-projects"
+            type="checkbox"
+            required
+            value="Front-end Projects"
+            name="front-end-projects" />
+          Front-end Projects
+        </label>
+        <label for="back-end-projects">
+          <input
+            class="inline"
+            id="back-end-projects"
+            type="checkbox"
+            required
+            value="Back-end Projects"
+            name="back-end-projects" />
+          Back-end Projects
+        </label>
+        <label for="data-visualization">
+          <input
+            class="inline"
+            id="data-visualization"
+            type="checkbox"
+            required
+            value="Data Visualization"
+            name="data-visualization" />
+          Data Visualization
+        </label>
+        <label for="challenges">
+          <input
+            class="inline"
+            id="challenges"
+            type="checkbox"
+            required
+            value="Challenges"
+            name="challenges" />
+          Challenges
+        </label>
+        <label for="open-source-community">
+          <input
+            class="inline"
+            id="open-source-community"
+            type="checkbox"
+            required
+            value="Open-source Community"
+            name="open-source-community" />
+          Open Source Community
+        </label>
+        <label for="gitter-help-room">
+          <input
+            class="inline"
+            id="gitter-help-room"
+            type="checkbox"
+            required
+            value="Gitter Help Room"
+            name="gitter-help-room" />
+          Gitter help rooms
+        </label>
+        <label for="videos">
+          <input
+            class="inline"
+            id="videos"
+            type="checkbox"
+            value="videos"
+            required
+            name="videos" />
+          Videos
+        </label>
+        <label for="city-meetups">
+          <input
+            class="inline"
+            id="city-meetups"
+            value="City Meetups"
+            type="checkbox"
+            required
+            name="city-meetups" />
+          City Meetups
+        </label>
+        <label for="wiki">
+          <input
+            class="inline"
+            id="wiki"
+            type="checkbox"
+            required
+            value="wiki"
+            name="wiki" />
+          Wiki
+        </label>
+        <label for="forum">
+          <input
+            class="inline"
+            id="forum"
+            value="forum"
+            type="checkbox"
+            required
+            name="forum" />
+          Forum
+        </label>
+        <label for="additional-courses">
+          <input
+            class="inline"
+            id="additional-courses"
+            type="checkbox"
+            required
+            value="Additional Courses"
+            name="additional-courses" />
+          Additional Courses
+        </label>
+      </div>
+      <div class="input-form">
+        <label for="">Any comments or suggestions?</label>
+        <textarea
+          name=""
+          id=""
+          rows="8"
+          cols="30"
+          placeholder="Enter Your Comment Here"></textarea>
+      </div>
+      <input type="submit" id="submit" value="Submit" />
+    </form>
+  </body>
+</html>
